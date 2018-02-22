@@ -1,4 +1,4 @@
-# Install script for directory: /home/xinyulin/CIS563/cispba/Projects
+# Install script for directory: /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,10 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/xinyulin/CIS563/cispba/Build/Release/Projects/partio_example/cmake_install.cmake")
-  include("/home/xinyulin/CIS563/cispba/Build/Release/Projects/eigen_example/cmake_install.cmake")
-  include("/home/xinyulin/CIS563/cispba/Build/Release/Projects/hm03/cmake_install.cmake")
-  include("/home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD/cmake_install.cmake")
+  include("/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD/cmake_install.cmake")
 
 endif()
 

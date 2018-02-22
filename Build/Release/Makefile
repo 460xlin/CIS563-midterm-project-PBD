@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xinyulin/CIS563/cispba
+CMAKE_SOURCE_DIR = /home/xinyulin/CIS563/CIS563-midterm-project-PBD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xinyulin/CIS563/cispba/Build/Release
+CMAKE_BINARY_DIR = /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles /home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -179,45 +179,6 @@ partio/fast:
 .PHONY : partio/fast
 
 #=============================================================================
-# Target rules for targets named partio_example
-
-# Build rule for target.
-partio_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 partio_example
-.PHONY : partio_example
-
-# fast build rule for target.
-partio_example/fast:
-	$(MAKE) -f Projects/partio_example/CMakeFiles/partio_example.dir/build.make Projects/partio_example/CMakeFiles/partio_example.dir/build
-.PHONY : partio_example/fast
-
-#=============================================================================
-# Target rules for targets named eigen_example
-
-# Build rule for target.
-eigen_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 eigen_example
-.PHONY : eigen_example
-
-# fast build rule for target.
-eigen_example/fast:
-	$(MAKE) -f Projects/eigen_example/CMakeFiles/eigen_example.dir/build.make Projects/eigen_example/CMakeFiles/eigen_example.dir/build
-.PHONY : eigen_example/fast
-
-#=============================================================================
-# Target rules for targets named hm03
-
-# Build rule for target.
-hm03: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hm03
-.PHONY : hm03
-
-# fast build rule for target.
-hm03/fast:
-	$(MAKE) -f Projects/hm03/CMakeFiles/hm03.dir/build.make Projects/hm03/CMakeFiles/hm03.dir/build
-.PHONY : hm03/fast
-
-#=============================================================================
 # Target rules for targets named PBD
 
 # Build rule for target.
@@ -244,9 +205,6 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... partio"
-	@echo "... partio_example"
-	@echo "... eigen_example"
-	@echo "... hm03"
 	@echo "... PBD"
 .PHONY : help
 

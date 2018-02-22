@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xinyulin/CIS563/cispba
+CMAKE_SOURCE_DIR = /home/xinyulin/CIS563/CIS563-midterm-project-PBD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xinyulin/CIS563/cispba/Build/Release
+CMAKE_BINARY_DIR = /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release
 
 # Include any dependencies generated for this target.
 include Projects/PBD/CMakeFiles/PBD.dir/depend.make
@@ -59,16 +59,16 @@ include Projects/PBD/CMakeFiles/PBD.dir/flags.make
 
 Projects/PBD/CMakeFiles/PBD.dir/main.cpp.o: Projects/PBD/CMakeFiles/PBD.dir/flags.make
 Projects/PBD/CMakeFiles/PBD.dir/main.cpp.o: ../../Projects/PBD/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/main.cpp.o"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/main.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/main.cpp.o"
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/main.cpp.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/main.cpp
 
 Projects/PBD/CMakeFiles/PBD.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PBD.dir/main.cpp.i"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/cispba/Projects/PBD/main.cpp > CMakeFiles/PBD.dir/main.cpp.i
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/main.cpp > CMakeFiles/PBD.dir/main.cpp.i
 
 Projects/PBD/CMakeFiles/PBD.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PBD.dir/main.cpp.s"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/cispba/Projects/PBD/main.cpp -o CMakeFiles/PBD.dir/main.cpp.s
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/main.cpp -o CMakeFiles/PBD.dir/main.cpp.s
 
 Projects/PBD/CMakeFiles/PBD.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ Projects/PBD/CMakeFiles/PBD.dir/main.cpp.o.provides.build: Projects/PBD/CMakeFil
 
 Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.o: Projects/PBD/CMakeFiles/PBD.dir/flags.make
 Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.o: ../../Projects/PBD/tiny_obj_loader.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.o"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/tiny_obj_loader.cc.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/tiny_obj_loader.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.o"
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/tiny_obj_loader.cc.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/tiny_obj_loader.cc
 
 Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PBD.dir/tiny_obj_loader.cc.i"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/cispba/Projects/PBD/tiny_obj_loader.cc > CMakeFiles/PBD.dir/tiny_obj_loader.cc.i
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/tiny_obj_loader.cc > CMakeFiles/PBD.dir/tiny_obj_loader.cc.i
 
 Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PBD.dir/tiny_obj_loader.cc.s"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/cispba/Projects/PBD/tiny_obj_loader.cc -o CMakeFiles/PBD.dir/tiny_obj_loader.cc.s
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/tiny_obj_loader.cc -o CMakeFiles/PBD.dir/tiny_obj_loader.cc.s
 
 Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.o.requires:
 
@@ -107,16 +107,16 @@ Projects/PBD/CMakeFiles/PBD.dir/tiny_obj_loader.cc.o.provides.build: Projects/PB
 
 Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.o: Projects/PBD/CMakeFiles/PBD.dir/flags.make
 Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.o: ../../Projects/PBD/particles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.o"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/particles.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/particles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.o"
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/particles.cpp.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/particles.cpp
 
 Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PBD.dir/particles.cpp.i"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/cispba/Projects/PBD/particles.cpp > CMakeFiles/PBD.dir/particles.cpp.i
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/particles.cpp > CMakeFiles/PBD.dir/particles.cpp.i
 
 Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PBD.dir/particles.cpp.s"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/cispba/Projects/PBD/particles.cpp -o CMakeFiles/PBD.dir/particles.cpp.s
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/particles.cpp -o CMakeFiles/PBD.dir/particles.cpp.s
 
 Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.o.requires:
 
@@ -131,16 +131,16 @@ Projects/PBD/CMakeFiles/PBD.dir/particles.cpp.o.provides.build: Projects/PBD/CMa
 
 Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.o: Projects/PBD/CMakeFiles/PBD.dir/flags.make
 Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.o: ../../Projects/PBD/distance_constraint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.o"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/distance_constraint.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/distance_constraint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.o"
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PBD.dir/distance_constraint.cpp.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/distance_constraint.cpp
 
 Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PBD.dir/distance_constraint.cpp.i"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/cispba/Projects/PBD/distance_constraint.cpp > CMakeFiles/PBD.dir/distance_constraint.cpp.i
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/distance_constraint.cpp > CMakeFiles/PBD.dir/distance_constraint.cpp.i
 
 Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PBD.dir/distance_constraint.cpp.s"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/cispba/Projects/PBD/distance_constraint.cpp -o CMakeFiles/PBD.dir/distance_constraint.cpp.s
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/distance_constraint.cpp -o CMakeFiles/PBD.dir/distance_constraint.cpp.s
 
 Projects/PBD/CMakeFiles/PBD.dir/distance_constraint.cpp.o.requires:
 
@@ -170,8 +170,8 @@ PBD_EXTERNAL_OBJECTS =
 ../../Projects/PBD/PBD: Projects/PBD/CMakeFiles/PBD.dir/build.make
 ../../Projects/PBD/PBD: partio-build/lib/libpartio.a
 ../../Projects/PBD/PBD: Projects/PBD/CMakeFiles/PBD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../../../Projects/PBD/PBD"
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PBD.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../../../Projects/PBD/PBD"
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PBD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Projects/PBD/CMakeFiles/PBD.dir/build: ../../Projects/PBD/PBD
@@ -186,10 +186,10 @@ Projects/PBD/CMakeFiles/PBD.dir/requires: Projects/PBD/CMakeFiles/PBD.dir/distan
 .PHONY : Projects/PBD/CMakeFiles/PBD.dir/requires
 
 Projects/PBD/CMakeFiles/PBD.dir/clean:
-	cd /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD && $(CMAKE_COMMAND) -P CMakeFiles/PBD.dir/cmake_clean.cmake
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD && $(CMAKE_COMMAND) -P CMakeFiles/PBD.dir/cmake_clean.cmake
 .PHONY : Projects/PBD/CMakeFiles/PBD.dir/clean
 
 Projects/PBD/CMakeFiles/PBD.dir/depend:
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xinyulin/CIS563/cispba /home/xinyulin/CIS563/cispba/Projects/PBD /home/xinyulin/CIS563/cispba/Build/Release /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD /home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD/CMakeFiles/PBD.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xinyulin/CIS563/CIS563-midterm-project-PBD /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD/CMakeFiles/PBD.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Projects/PBD/CMakeFiles/PBD.dir/depend
 

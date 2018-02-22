@@ -1,8 +1,8 @@
-# Install script for directory: /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib
+# Install script for directory: /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xinyulin/CIS563/cispba/Linux-4.13.0-x86_64")
+  set(CMAKE_INSTALL_PREFIX "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Linux-4.13.0-x86_64")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,14 +33,14 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/lib/libpartio.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/lib/libpartio.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/Partio.h"
-    "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/PartioAttribute.h"
-    "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/PartioIterator.h"
+    "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/Partio.h"
+    "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/PartioAttribute.h"
+    "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/PartioIterator.h"
     )
 endif()
 

@@ -1,122 +1,107 @@
 [
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PDC.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PDC.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PDC.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PDC.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PDC.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PDC.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PTS.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PTS.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PTS.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PTS.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PTS.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PTS.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/ParticleIO.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/ParticleIO.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/ParticleIO.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/ParticleIO.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/ParticleIO.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/ParticleIO.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PDB.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PDB.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PDB.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PDB.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PDB.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PDB.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/ZIP.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/ZIP.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/ZIP.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/ZIP.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/ZIP.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/ZIP.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/RIB.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/RIB.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/RIB.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/RIB.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/RIB.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/RIB.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/GEO.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/GEO.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/GEO.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/GEO.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/GEO.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/GEO.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PTC.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PTC.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PTC.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PTC.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PTC.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PTC.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/BGEO.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/BGEO.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/BGEO.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/BGEO.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/BGEO.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/BGEO.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/BIN.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/BIN.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/BIN.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/BIN.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/BIN.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/BIN.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PDA.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PDA.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/PDA.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/PDA.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PDA.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/PDA.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/MC.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/MC.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/io/MC.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/io/MC.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/MC.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/io/MC.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/Particle.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/Particle.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/Particle.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/Particle.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/Particle.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/Particle.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleHeaders.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleHeaders.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleHeaders.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleHeaders.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleHeaders.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleHeaders.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleSimpleInterleave.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleSimpleInterleave.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleSimpleInterleave.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleSimpleInterleave.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleSimpleInterleave.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleSimpleInterleave.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleCaching.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleCaching.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleCaching.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleCaching.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleCaching.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleCaching.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/cispba/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleSimple.o -c /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleSimple.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib/core/ParticleSimple.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -I/home/xinyulin/CIS563/CIS563-midterm-project-PBD/src/lib  -fPIC -O3 -DNDEBUG   -Wextra -Wno-unused-parameter -std=gnu++14 -o CMakeFiles/partio.dir/core/ParticleSimple.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleSimple.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib/core/ParticleSimple.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/partio_example",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/partio_example.dir/main.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/partio_example/main.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/partio_example/main.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/main.cpp.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/main.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/main.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/eigen_example",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /usr/include/eigen3   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/eigen_example.dir/main.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/eigen_example/main.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/eigen_example/main.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/tiny_obj_loader.cc.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/tiny_obj_loader.cc",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/tiny_obj_loader.cc"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/hm03",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /usr/include/eigen3   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/hm03.dir/main.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/hm03/main.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/hm03/main.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/particles.cpp.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/particles.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/particles.cpp"
 },
 {
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/main.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/main.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/PBD/main.cpp"
-},
-{
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/tiny_obj_loader.cc.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/tiny_obj_loader.cc",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/PBD/tiny_obj_loader.cc"
-},
-{
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/particles.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/particles.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/PBD/particles.cpp"
-},
-{
-  "directory": "/home/xinyulin/CIS563/cispba/Build/Release/Projects/PBD",
-  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/cispba/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/cispba/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/distance_constraint.cpp.o -c /home/xinyulin/CIS563/cispba/Projects/PBD/distance_constraint.cpp",
-  "file": "/home/xinyulin/CIS563/cispba/Projects/PBD/distance_constraint.cpp"
+  "directory": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/PBD",
+  "command": "/usr/bin/c++   -DCISPBA_PLUGIN_DIR=\\\"/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Plugins\\\" -isystem /usr/include/eigen3 -isystem /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src/src/lib   -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/PBD.dir/distance_constraint.cpp.o -c /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/distance_constraint.cpp",
+  "file": "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/distance_constraint.cpp"
 }
 ]

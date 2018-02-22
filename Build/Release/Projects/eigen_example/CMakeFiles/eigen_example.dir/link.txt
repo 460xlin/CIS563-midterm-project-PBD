@@ -1,1 +1,0 @@
-/usr/bin/c++    -fPIC -Wall -Werror=all -Wextra -Wno-unused-parameter -Wcast-align -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -march=native -fno-math-errno -O3 -DNDEBUG   CMakeFiles/eigen_example.dir/main.cpp.o  -o ../../../../Projects/eigen_example/eigen_example -rdynamic 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/xinyulin/CIS563/cispba/Projects/PBD
+# Install script for directory: /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/PBD"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/xinyulin/CIS563/cispba/Projects/PBD/PBD")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Projects/PBD/PBD")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/PBD" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/PBD")
     if(CMAKE_INSTALL_DO_STRIP)

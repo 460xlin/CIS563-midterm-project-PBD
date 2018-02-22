@@ -7,11 +7,11 @@
 SHELL := /bin/bash
 RM    := rm -rf
 MKDIR := mkdir -p
-BUILDROOT := /home/xinyulin/CIS563/cispba/Build
+BUILDROOT := /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build
 BUILDDEFAULT := Release
 RELATIVEPATH := Projects
 BUILDDIR = $(BUILDROOT)/$(BUILDDEFAULT)/$(RELATIVEPATH)
-ROOTDIR := /home/xinyulin/CIS563/cispba
+ROOTDIR := /home/xinyulin/CIS563/CIS563-midterm-project-PBD
 BUILDTYPES := Release MinSizeRel Debug Coverage RelWithDebInfo Quick
 OTHERGOALS := $(filter-out distclean $(BUILDTYPES),$(MAKECMDGOALS))
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xinyulin/CIS563/cispba
+CMAKE_SOURCE_DIR = /home/xinyulin/CIS563/CIS563-midterm-project-PBD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xinyulin/CIS563/cispba/Build/Release
+CMAKE_BINARY_DIR = /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles /home/xinyulin/CIS563/cispba/Build/Release/Projects/CMakeFiles/progress.marks
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/cispba/Build/Release/CMakeFiles 0
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/Projects/CMakeFiles/progress.marks
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/clean
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,17 +152,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/preinstall
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/preinstall
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(MAKE) -f CMakeFiles/Makefile2 Projects/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -189,6 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/xinyulin/CIS563/cispba/Build/Release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

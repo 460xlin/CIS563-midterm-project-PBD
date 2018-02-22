@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/CMakeFiles/partio-download"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/CMakeFiles/partio-download"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/CMakeFiles/partio-download.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/CMakeFiles/partio-download.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/CMakeFiles/partio-download-complete.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/CMakeFiles/partio-download-complete.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-install.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-install.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-mkdir.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-mkdir.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-download.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-download.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-patch.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-patch.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-configure.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-configure.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-build.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-build.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-test.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-test.rule"
 		},
 		{
-			"file" : "/home/xinyulin/CIS563/cispba/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-skip-update.rule"
+			"file" : "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-download/partio-download-prefix/src/partio-download-stamp/partio-download-skip-update.rule"
 		}
 	],
 	"target" : 

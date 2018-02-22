@@ -1,8 +1,8 @@
-# Install script for directory: /home/xinyulin/CIS563/cispba/Build/Release/partio-src
+# Install script for directory: /home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xinyulin/CIS563/cispba/Linux-4.13.0-x86_64")
+  set(CMAKE_INSTALL_PREFIX "/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Linux-4.13.0-x86_64")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/xinyulin/CIS563/cispba/Build/Release/partio-build/src/lib/cmake_install.cmake")
+  include("/home/xinyulin/CIS563/CIS563-midterm-project-PBD/Build/Release/partio-build/src/lib/cmake_install.cmake")
 
 endif()
 
