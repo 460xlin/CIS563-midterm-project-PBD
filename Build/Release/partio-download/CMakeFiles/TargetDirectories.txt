@@ -1,0 +1,3 @@
+/home/xinyulin/CIS563/cispba/Build/Release/partio-download/CMakeFiles/edit_cache.dir
+/home/xinyulin/CIS563/cispba/Build/Release/partio-download/CMakeFiles/rebuild_cache.dir
+/home/xinyulin/CIS563/cispba/Build/Release/partio-download/CMakeFiles/partio-download.dir
