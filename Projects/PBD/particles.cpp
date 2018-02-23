@@ -47,10 +47,10 @@ void Particles <T>::assignInitialVelocity()
 template<class T>
 void Particles <T>::assignDistanceConstraints()
 {
-	for(unsigned int i = 0; i < myIndices.size(); ++i)
-	{
+	// for(unsigned int i = 0; i < myIndices.size(); ++i)
+	// {
 		
-	}
+	// }
 }
 
 
@@ -174,10 +174,9 @@ void Particles <T>::createFromObj(const char* filename)
 													   allPositions.at(j+2)) );
 			}
 			
-			for(unsigned int k = 0; k < positions.size(); k++)
-			{
-				std::cout << positions.at(k)[0] << std::endl;
-			}
+				unsigned int tempIndex = positions.size()-1;
+				std::cout <<"The last vertex position: " << positions.at(tempIndex)[0] << " " << positions.at(tempIndex)[1] << " " << positions.at(tempIndex)[2] << std::endl;
+			
 		}
 
 
