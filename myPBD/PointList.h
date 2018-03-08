@@ -20,6 +20,7 @@ public:
     PointList();
     ~PointList();
     void resize(int _size);
+    void clear();
     void unlockPosAll();
 };
 

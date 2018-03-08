@@ -8,7 +8,7 @@
 #include "PointList.h"
 #include "Constraint.h"
 #include "Scene.h"
-#include <string>
+#include <sstream>
 
 class PBD {
 public:
@@ -17,21 +17,24 @@ public:
         int tri1, tri2;
     };
 
-    PointList pointList;
-    int dimX;
-    int dimZ;
-    float thickness;
     int iteration;
+    float thickness;
+
+    float stretch_stiff;
+    float bend_stiff;
+
+    PointList pointList;
     std::vector<Constraint*> constraint;
     std::vector<CollisionConstraint> constraintCollision;
     std::vector<SelfCollisionConstraint> constraintSelfCollision;
     std::vector<int> triangleList;
     std::vector<Edge> edgeList;
 
-    PBD();
+    PBD(int iteration, float thickness, float stretch_stiff = 0.5f, float bend_stiff = 0.1f);
     ~PBD();
-    void initialize(int _dimX, int _dimZ, float _thickness, int _iteration, glm::vec3 clothMin, glm::vec3 clothMax);
-    void update(Scene* s, float dt);
+    void initialize(int _dimX, int _dimZ, glm::vec3 clothMin, glm::vec3 clothMax);
+    int initializeFromObj(std::string name, glm::vec3 T, glm::vec3 R, glm::vec3 S);
+    void update(Scene* s, float dt, int frame);//frame is for debug
     void exportFile(std::string name, int frame);
     void printAll();
     void printAllPredict();
@@ -44,10 +47,12 @@ private:
     void computePredictedPostion(float dt);
     void collisionDetection(Scene* s);
     void selfCollisionDetection();
-    void resolveConstraints();
+    void resolveConstraints(int frame);//frame for debug
     void integration(float dt);
     void updateVelocity(float friction, float restitution);
     void cleanCollisionConstraints();
+    int loadObj(std::string name, glm::vec3 T, glm::vec3 R, glm::vec3 S);
+    void parseObjFace(std::stringstream& ss, std::vector<int>& index);
 };
 
 

@@ -137,6 +137,10 @@ CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/./core/type_vec4.inl
 CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/core/_fixes.hpp
 CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/core/setup.hpp
 CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/glm.hpp
+CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/gtc/matrix_transform.hpp
+CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/gtc/matrix_transform.inl
+CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/gtx/transform.hpp
+CMakeFiles/myPBD.dir/PBD.cpp.o: ../glm/gtx/transform.inl
 
 CMakeFiles/myPBD.dir/PointList.cpp.o: ../PointList.cpp
 CMakeFiles/myPBD.dir/PointList.cpp.o: ../PointList.h

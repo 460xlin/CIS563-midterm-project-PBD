@@ -4,16 +4,20 @@
 
 #include "PBD.h"
 #include <Partio.h>
-#include <sstream>
+#include "glm/gtx/transform.hpp"
 #include <fstream>
 
 //#define MYDEBUG_UPDATE //print pos after each step in update
 //#define MYDEBUG_CONSTRAINT //print pos in resolveConstraints after projecting each type of constraint
 //#define MYDEBUG_PREDICT //print posPredict instead of pos
 //#define MYDEBUG_LOGTXT //out put invMass, velocity, position to several txt files
+//#define MYDEBUG_FRAME 67
 
-PBD::PBD() {
-
+PBD::PBD(int _iteration, float _thickness, float _stretch_stiff, float _bend_stiff) {
+    iteration = _iteration;
+    thickness = _thickness;
+    stretch_stiff = _stretch_stiff;
+    bend_stiff = _bend_stiff;
 }
 
 PBD::~PBD(){
@@ -22,11 +26,7 @@ PBD::~PBD(){
     }
 }
 
-void PBD::initialize(int _dimX, int _dimZ, float _thickness, int _iteration, glm::vec3 clothMin, glm::vec3 clothMax){
-    dimX = _dimX;
-    dimZ = _dimZ;
-    thickness = _thickness;
-    iteration = _iteration;
+void PBD::initialize(int dimX, int dimZ, glm::vec3 clothMin, glm::vec3 clothMax){
     glm::vec3 delta = clothMax - clothMin;
     delta.x /= (dimX - 1.f);
     //delta.y /= (dimY - 1.f);
@@ -64,33 +64,61 @@ void PBD::initialize(int _dimX, int _dimZ, float _thickness, int _iteration, glm
     generateInternalConstraints();
 }
 
-void PBD::update(Scene *s, float dt) {
+int PBD::initializeFromObj(std::string name, glm::vec3 T, glm::vec3 R, glm::vec3 S) {
+    pointList.clear();
+    triangleList.clear();
+    edgeList.clear();
+    if(loadObj(name, T, R, S))
+        return 1;
+    generateEdgeList();
+    generateInternalConstraints();
+    return 0;
+    //std::cout << "edge:" << edgeList.size() << " triangle:" << triangleList.size() << std::endl;
+}
+
+void PBD::update(Scene *s, float dt, int frame) {
     glm::vec3 gravity(0.0f, -9.8f, 0.0f);
     applyExternalForce(gravity, dt);//!
 #ifdef MYDEBUG_UPDATE
-    std::cout << ">>>1.applyExternalForce:<<<" << std::endl;
-    printDebug();
+    if(frame==-1||frame==MYDEBUG_FRAME)
+    {
+        std::cout << ">>>1.applyExternalForce:<<<" << std::endl;
+        printDebug();
+    }
 #endif
     dampVelocity(0.01f);
+
     computePredictedPostion(dt);//!
 #ifdef MYDEBUG_UPDATE
-    std::cout << ">>>2.computePredictedPostion:<<<" << std::endl;
-    printDebug();
+    if(frame==-1||frame==MYDEBUG_FRAME)
+    {
+        std::cout << ">>>2.computePredictedPostion:<<<" << std::endl;
+        printDebug();
+    }
 #endif
     collisionDetection(s);//?
 #ifdef MYDEBUG_UPDATE
-    std::cout << ">>>2.5 collisionDetection:<<<" << std::endl;
-    printDebug();
+    if(frame==-1||frame==MYDEBUG_FRAME)
+    {
+        std::cout << ">>>2.5 collisionDetection:<<<" << std::endl;
+        printDebug();
+    }
 #endif
-    resolveConstraints();//?
+    resolveConstraints(frame);//?
 #ifdef MYDEBUG_UPDATE
-    std::cout << ">>>2.8 resolveConstraints:<<<" << std::endl;
-    printDebug();
+    if(frame==-1||frame==MYDEBUG_FRAME)
+    {
+        std::cout << ">>>2.8 resolveConstraints:<<<" << std::endl;
+        printDebug();
+    }
 #endif
     integration(dt);//!
 #ifdef MYDEBUG_UPDATE
-    std::cout << ">>>3.integration:<<<" << std::endl;
-    printDebug();
+    if(frame==-1||frame==MYDEBUG_FRAME)
+    {
+        std::cout << ">>>3.integration:<<<" << std::endl;
+        printDebug();
+    }
 #endif
     updateVelocity(0.98f, 0.4f);
     cleanCollisionConstraints();
@@ -210,27 +238,22 @@ void PBD::generateEdgeList()
     }
 
     delete[] first_edge;
-    //printf("Edge number: %u.\n", edgeList.size());
 }
 
 void PBD::generateInternalConstraints() {
-    for(int i = 0; i < dimX; ++i)
+    for(int i = 0; i < pointList.pos.size(); ++i)
     {
-        for(int k = 0; k < dimZ; ++k)
+        if(i == 0)//the fixed point
         {
-            int index = dimZ * i + k;
-
-            if(k == 0)
-            {
-                FixedPointConstraint* fixedConstraint = new FixedPointConstraint(&pointList, index, pointList.pos[index]);
-                //constraint.push_back(fixedConstraint);
-            }
+            FixedPointConstraint* fixedConstraint = new FixedPointConstraint(&pointList, i, pointList.pos[i]);
+            //uncomment the code below
+            //constraint.push_back(fixedConstraint);
         }
     }
 
+
     // generate stretch constraints. assign a stretch constraint for each edge.
     glm::vec3 p1, p2;
-    float stretch_stiff = 0.5f;
     float s_stiff = 1.0f - std::pow((1 - stretch_stiff), 1.0f / iteration);
     for(std::vector<Edge>::iterator e = edgeList.begin(); e != edgeList.end(); ++e)
     {
@@ -248,7 +271,6 @@ void PBD::generateInternalConstraints() {
     int id1, id2, id3, id4;
     int *tri;
 
-    float bend_stiff = 0.1f;
     float b_stiff = 1.0f - std::pow((1 - bend_stiff), 1.0f / iteration);
     for(std::vector<Edge>::iterator e = edgeList.begin(); e != edgeList.end(); ++e)
     {
@@ -387,7 +409,7 @@ void PBD::selfCollisionDetection()
     ;
 }
 
-void PBD::resolveConstraints()
+void PBD::resolveConstraints(int frame)
 {
     bool all_solved = true;
     bool reverse = false;
@@ -400,8 +422,10 @@ void PBD::resolveConstraints()
             all_solved &= constraint[i]->project_constraint();
         }
 #ifdef MYDEBUG_CONSTRAINT
-        std::cout << ">>>A.internal constraints:<<<" << std::endl;
-        printDebug();
+        if(frame==-1||frame==MYDEBUG_FRAME) {
+            std::cout << ">>>A.internal constraints:<<<" << std::endl;
+            printDebug();
+        }
 #endif
         // solve all the external constraints.
         size = constraintCollision.size();
@@ -410,8 +434,10 @@ void PBD::resolveConstraints()
             all_solved &= constraintCollision[i].project_constraint();
         }
 #ifdef MYDEBUG_CONSTRAINT
-        std::cout << ">>>B.external collision constraints:<<<" << std::endl;
-        printDebug();
+        if(frame==-1||frame==MYDEBUG_FRAME) {
+            std::cout << ">>>B.external collision constraints:<<<" << std::endl;
+            printDebug();
+        }
 #endif
         // solve all the self collisions.
         size = constraintSelfCollision.size();
@@ -420,8 +446,10 @@ void PBD::resolveConstraints()
             all_solved &= constraintSelfCollision[i].project_constraint();
         }
 #ifdef MYDEBUG_CONSTRAINT
-        std::cout << ">>>C.self collision constraints:<<<" << std::endl;
-        printDebug();
+        if(frame==-1||frame==MYDEBUG_FRAME) {
+            std::cout << ">>>C.self collision constraints:<<<" << std::endl;
+            printDebug();
+        }
 #endif
         if(all_solved)
             break;
@@ -550,4 +578,141 @@ void PBD::printDebug() {
 #else
     printAll();
 #endif
+}
+
+int PBD::loadObj(std::string name, glm::vec3 T, glm::vec3 R, glm::vec3 S) {
+    std::fstream file;
+    file.open(name, std::ios::in);
+    if (file.is_open())
+    {
+        std::string str;
+        while (std::getline(file, str))
+        {
+            if (str.substr(0, 2) == "v ")
+            {
+                std::stringstream ss;
+                ss << str.substr(2);
+                glm::vec3 v;
+                ss >> v.x;
+                ss >> v.y;
+                ss >> v.z;
+                //extra!!
+                v = glm::vec3((glm::translate(T)
+                               * glm::rotate(R.z, glm::vec3(0,0,1))
+                               * glm::rotate(R.y, glm::vec3(0,1,0))
+                               * glm::rotate(R.x, glm::vec3(1,0,0))
+                               * glm::scale(S) * glm::vec4(v,1.f)));
+                //extra!!
+                pointList.pos.push_back(v);
+                pointList.posPredict.push_back(v);
+                pointList.velocity.push_back(glm::vec3(0.f));
+                pointList.invMass.push_back(1.f);
+                pointList.size++;
+            }
+            else if (str.substr(0, 3) == "vt ")
+            {
+                //nothing
+            }
+            else if (str.substr(0, 3) == "vn ")
+            {
+                //nothing
+            }
+            else if (str.substr(0, 2) == "f ")
+            {
+                std::stringstream ss;
+                ss << str.substr(2);
+                std::vector<int> aIndices;
+
+                //Parsing
+                parseObjFace(ss, aIndices);
+
+                //Collecting(Reassembling)
+                //if there are more than 3 vertices for one face then split it in to several triangles
+                for (int i = 0; i < aIndices.size(); i++)
+                {
+                    if (i >= 3)
+                    {
+                        triangleList.push_back(aIndices.at(0));
+                        triangleList.push_back(aIndices.at(i - 1));
+                    }
+                    triangleList.push_back(aIndices.at(i));
+                }
+            }
+            else if (str[0] == '#')
+            {
+                //comment
+            }
+            else
+            {
+                //others
+            }
+        }
+    }
+    else
+    {
+        std::cout << "can not open" << name << std::endl;
+        return 1;
+    }
+    file.close();
+    return 0;
+}
+
+void PBD::parseObjFace(std::stringstream& ss, std::vector<int>& index) {
+    char discard;
+    char peek;
+    //int count;
+    int data;
+
+    //One vertex in one loop
+    do
+    {
+        int VI, NI, TI = -1;
+
+        ss >> peek;
+        if (peek >= '0' && peek <= '9')
+        {
+            ss.putback(peek);
+            ss >> data;
+            VI = data - 1;//index start at 1 in an .obj file but at 0 in an array
+            ss >> discard;
+        }
+        else
+        {
+            //push default value
+            VI = -1;
+        }
+
+        ss >> peek;
+        if (peek >= '0' && peek <= '9')
+        {
+            ss.putback(peek);
+            ss >> data;
+            TI = data - 1;//index start at 1 in an .obj file but at 0 in an array
+            ss >> discard;
+        }
+        else
+        {
+            //push default value
+            TI = -1;
+            //hasTexcoord = false;
+        }
+
+        ss >> peek;
+        if (peek >= '0' && peek <= '9')
+        {
+            ss.putback(peek);
+            ss >> data;
+            NI = data - 1;//index start at 1 in an .obj file but at 0 in an array
+            //no discard here because it is the end for this vertex
+        }
+        else
+        {
+            //push default value
+            NI = -1;
+            //hasNormal = false;
+        }
+
+        index.push_back(VI);
+
+    } while (!ss.eof());
 }

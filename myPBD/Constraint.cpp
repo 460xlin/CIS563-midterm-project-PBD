@@ -132,6 +132,7 @@ bool StretchConstraint::project_constraint()
     glm::vec3 dp1, dp2;
     float w1 = m_vertices->invMass[m_p1];
     float w2 = m_vertices->invMass[m_p2];
+    if(length==0) length = 1;
     dp1 = -1 * w1 / (w1 + w2) * (length - m_rest_length) * (p1 - p2) / length;
     dp2 = w2 / (w1 + w2) * (length - m_rest_length) * (p1 - p2) / length;
     m_vertices->posPredict[m_p1] += dp1 * m_stiffness;
@@ -191,20 +192,27 @@ bool BendConstraint::project_constraint()
     glm::vec3 newP3 = p3 - p1;
     glm::vec3 newP4 = p4 - p1;
 
-    glm::vec3 n1 = glm::cross(newP2, newP3) / glm::length(glm::cross(newP2, newP3));
-    glm::vec3 n2 = glm::cross(newP2, newP4) / glm::length(glm::cross(newP2, newP4));
+    float lx23 = glm::length(glm::cross(newP2, newP3));
+    if(lx23==0) lx23 = 1;
+
+    float lx24 = glm::length(glm::cross(newP2, newP4));
+    if(lx24==0) lx24 = 1;
+
+    glm::vec3 n1 = glm::cross(newP2, newP3) / lx23;
+    glm::vec3 n2 = glm::cross(newP2, newP4) / lx24;
     float d = glm::clamp(glm::dot(n1, n2), -1.f, 1.f);
 
     if(glm::abs(acos(d) - m_phi) <EPSILON)
         return true;
 
-    glm::vec3 q3 = (glm::cross(newP2, n2) + glm::cross(n1, newP2) * d) / glm::length(glm::cross(newP2, newP3));
-    glm::vec3 q4 = (glm::cross(newP2, n1) + glm::cross(n2, newP2) * d) / glm::length(glm::cross(newP2, newP4));
-    glm::vec3 q2 = -(glm::cross(newP3, n2) + glm::cross(n1, newP3) * d) / glm::length(glm::cross(newP2, newP3))
-              -(glm::cross(newP4, n1) + glm::cross(n2, newP4) * d) / glm::length(glm::cross(newP2, newP4));
+    glm::vec3 q3 = (glm::cross(newP2, n2) + glm::cross(n1, newP2) * d) / lx23;
+    glm::vec3 q4 = (glm::cross(newP2, n1) + glm::cross(n2, newP2) * d) / lx24;
+    glm::vec3 q2 = -(glm::cross(newP3, n2) + glm::cross(n1, newP3) * d) / lx23
+              -(glm::cross(newP4, n1) + glm::cross(n2, newP4) * d) / lx24;
     glm::vec3 q1 = -q2 - q3 - q4;
 
     float denominator = w1 * glm::dot(q1,q1) + w2 * glm::dot(q2,q2) + w3 * glm::dot(q3,q3) + w4 * glm::dot(q4,q4);
+    if(denominator==0) denominator = 1;
 
     glm::vec3 dp1 = -1.f * w1 * glm::sqrt(1-d*d)*(glm::acos(d) - m_phi) * q1 / denominator;
     glm::vec3 dp2 = -1.f * w2 * glm::sqrt(1-d*d)*(glm::acos(d) - m_phi) * q2 / denominator;
@@ -313,6 +321,7 @@ bool SelfCollisionConstraint::project_constraint()
 
     glm::vec3 normal(glm::cross(p2, p3));
     float c23 = glm::length(normal);
+    if(c23==0) c23=1;//me
     normal = glm::normalize(normal);
 
     float value = glm::dot(q, normal) - m_h;
@@ -335,6 +344,7 @@ bool SelfCollisionConstraint::project_constraint()
     assert(denominator < EPSILON);
 
     glm::vec3 dq, dp1, dp2, dp3;
+    if(denominator==0) denominator=1;
     float s = value / denominator;
     dq = -wq * s * dcq;
     dp1 = -w1 * s * dcp1;

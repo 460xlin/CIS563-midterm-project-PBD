@@ -27,6 +27,10 @@ void PointList::resize(int _size) {
     invMass.resize(size);
 }
 
+void PointList::clear() {
+    resize(0);
+}
+
 void PointList::unlockPosAll() {
     for(std::vector<bool>::iterator i = posLock.begin(); i != posLock.end(); ++i)
     {

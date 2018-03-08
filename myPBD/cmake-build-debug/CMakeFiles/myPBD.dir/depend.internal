@@ -138,6 +138,10 @@ CMakeFiles/myPBD.dir/PBD.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/glm/core/_fixes.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/core/setup.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/glm.hpp
+ /home/sean/File/Project/clion_projects/myPBD/glm/gtc/matrix_transform.hpp
+ /home/sean/File/Project/clion_projects/myPBD/glm/gtc/matrix_transform.inl
+ /home/sean/File/Project/clion_projects/myPBD/glm/gtx/transform.hpp
+ /home/sean/File/Project/clion_projects/myPBD/glm/gtx/transform.inl
 CMakeFiles/myPBD.dir/PointList.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/PointList.cpp
  /home/sean/File/Project/clion_projects/myPBD/PointList.h
