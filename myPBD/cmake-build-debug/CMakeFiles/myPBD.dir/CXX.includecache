@@ -73,6 +73,14 @@ glm/glm.hpp
 /home/sean/File/Project/clion_projects/myPBD/Scene.cpp
 Scene.h
 /home/sean/File/Project/clion_projects/myPBD/Scene.h
+fstream
+-
+sstream
+-
+iostream
+-
+Partio.h
+-
 
 /home/sean/File/Project/clion_projects/myPBD/Scene.h
 glm/glm.hpp

@@ -50,7 +50,8 @@ class Sphere : public Primitive
 public:
     Sphere(const glm::vec3 pos, float radius) : m_center(pos), m_radius(radius)
     {
-
+        centerFake = glm::vec3(0.f);
+        radiusScale = 1.f;
     }
 
     virtual ~Sphere()
@@ -58,7 +59,11 @@ public:
 
     }
 
+    std::vector<glm::vec3> vertices;
+    glm::vec3 centerFake;
+    float radiusScale;
     virtual bool line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const;
+    int importFile(std::string name);
     virtual void exportFile(std::string name, int frame);
     glm::vec3 m_center;
     float m_radius;

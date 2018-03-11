@@ -208,6 +208,9 @@ CMakeFiles/myPBD.dir/PointList.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/glm/core/setup.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/glm.hpp
 CMakeFiles/myPBD.dir/Scene.cpp.o
+ ../partio/include/Partio.h
+ ../partio/include/PartioAttribute.h
+ ../partio/include/PartioIterator.h
  /home/sean/File/Project/clion_projects/myPBD/Scene.cpp
  /home/sean/File/Project/clion_projects/myPBD/Scene.h
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_detail.hpp

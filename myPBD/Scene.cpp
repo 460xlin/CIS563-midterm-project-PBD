@@ -3,6 +3,10 @@
 //
 
 #include "Scene.h"
+#include <fstream>
+#include <sstream>
+#include <iostream>
+#include <Partio.h>
 
 //----------Scene Class----------//
 Scene::Scene()
@@ -100,6 +104,109 @@ bool Sphere::line_intersection(const glm::vec3& p1, const glm::vec3& p2, float t
         return false;
 }
 
+int Sphere::importFile(std::string name) {
+    float diameter = -1;
+    glm::vec3 firstV(0.f);
+    glm::vec3 secondV(0.f);
+    bool gotFirstV = false;
+
+    std::fstream file;
+    file.open(name, std::ios::in);
+    if (file.is_open())
+    {
+        std::string str;
+        while (std::getline(file, str))
+        {
+            if (str.substr(0, 2) == "v ")
+            {
+                std::stringstream ss;
+                ss << str.substr(2);
+                glm::vec3 v;
+                ss >> v.x;
+                ss >> v.y;
+                ss >> v.z;
+                //extra!!
+                if(!gotFirstV) {
+                    firstV = v;
+                    secondV = v;//for clarity
+                    gotFirstV = true;
+                }
+                else {
+                    float distance = glm::length(firstV - v);
+                    if(distance > diameter)
+                    {
+                        diameter = distance;
+                        secondV = v;
+                    }
+                }
+                //extra!!
+                vertices.push_back(v);
+            }
+            else if (str.substr(0, 3) == "vt ")
+            {
+                //nothing
+            }
+            else if (str.substr(0, 3) == "vn ")
+            {
+                //nothing
+            }
+            else if (str.substr(0, 2) == "f ")
+            {
+                //nothing
+            }
+            else if (str[0] == '#')
+            {
+                //comment
+            }
+            else
+            {
+                //others
+            }
+        }
+    }
+    else
+    {
+        std::cout << "can not open" << name << std::endl;
+        return 1;
+    }
+
+    radiusScale = m_radius / (diameter / 2.f);
+    centerFake = (firstV + secondV)/2.f;
+
+    file.close();
+    return 0;
+}
+
 void Sphere::exportFile(std::string name, int frame) {
     //TO DO
+    glm::vec3 centerOffset =  glm::vec3(0.f) - centerFake;
+    int n = vertices.size();
+
+    Partio::ParticlesDataMutable *parts = Partio::create();
+    Partio::ParticleAttribute posH, vH, mH;
+    mH = parts->addAttribute("m", Partio::VECTOR, 1);
+    posH = parts->addAttribute("position", Partio::VECTOR, 3);
+    vH = parts->addAttribute("v", Partio::VECTOR, 3);
+
+    for (int i = 0; i < n; i++) {
+        int idx = parts->addParticle();
+        float *m = parts->dataWrite<float>(mH, idx);
+        float *p = parts->dataWrite<float>(posH, idx);
+        float *v = parts->dataWrite<float>(vH, idx);
+
+        m[0] = 1.0;
+        p[0] = (vertices[i].x + centerOffset.x) * radiusScale + m_center.x;
+        p[1] = (vertices[i].y + centerOffset.y) * radiusScale + m_center.y;
+        p[2] = (vertices[i].z + centerOffset.z) * radiusScale + m_center.z;
+        v[0] = 0;
+        v[1] = 0;
+        v[2] = 0;
+    }
+
+    std::stringstream ss;
+    ss << name;
+    ss << frame;
+    ss << ".bgeo";
+    Partio::write(ss.str().c_str(), *parts);
+    parts->release();
 }

@@ -207,6 +207,9 @@ CMakeFiles/myPBD.dir/PointList.cpp.o: ../glm/core/_fixes.hpp
 CMakeFiles/myPBD.dir/PointList.cpp.o: ../glm/core/setup.hpp
 CMakeFiles/myPBD.dir/PointList.cpp.o: ../glm/glm.hpp
 
+CMakeFiles/myPBD.dir/Scene.cpp.o: ../partio/include/Partio.h
+CMakeFiles/myPBD.dir/Scene.cpp.o: ../partio/include/PartioAttribute.h
+CMakeFiles/myPBD.dir/Scene.cpp.o: ../partio/include/PartioIterator.h
 CMakeFiles/myPBD.dir/Scene.cpp.o: ../Scene.cpp
 CMakeFiles/myPBD.dir/Scene.cpp.o: ../Scene.h
 CMakeFiles/myPBD.dir/Scene.cpp.o: ../glm/./core/_detail.hpp
