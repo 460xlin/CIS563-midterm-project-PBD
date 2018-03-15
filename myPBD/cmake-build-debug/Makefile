@@ -177,32 +177,32 @@ PBD.cpp.s:
 	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/PBD.cpp.s
 .PHONY : PBD.cpp.s
 
-PointList.o: PointList.cpp.o
+Points.o: Points.cpp.o
 
-.PHONY : PointList.o
+.PHONY : Points.o
 
 # target to build an object file
-PointList.cpp.o:
-	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/PointList.cpp.o
-.PHONY : PointList.cpp.o
+Points.cpp.o:
+	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/Points.cpp.o
+.PHONY : Points.cpp.o
 
-PointList.i: PointList.cpp.i
+Points.i: Points.cpp.i
 
-.PHONY : PointList.i
+.PHONY : Points.i
 
 # target to preprocess a source file
-PointList.cpp.i:
-	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/PointList.cpp.i
-.PHONY : PointList.cpp.i
+Points.cpp.i:
+	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/Points.cpp.i
+.PHONY : Points.cpp.i
 
-PointList.s: PointList.cpp.s
+Points.s: Points.cpp.s
 
-.PHONY : PointList.s
+.PHONY : Points.s
 
 # target to generate assembly for a file
-PointList.cpp.s:
-	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/PointList.cpp.s
-.PHONY : PointList.cpp.s
+Points.cpp.s:
+	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/Points.cpp.s
+.PHONY : Points.cpp.s
 
 Scene.o: Scene.cpp.o
 
@@ -273,9 +273,9 @@ help:
 	@echo "... PBD.o"
 	@echo "... PBD.i"
 	@echo "... PBD.s"
-	@echo "... PointList.o"
-	@echo "... PointList.i"
-	@echo "... PointList.s"
+	@echo "... Points.o"
+	@echo "... Points.i"
+	@echo "... Points.s"
 	@echo "... Scene.o"
 	@echo "... Scene.i"
 	@echo "... Scene.s"

@@ -12,61 +12,32 @@
 class Primitive
 {
 public:
-    Primitive()
-    {
-
-    };
-
-    virtual ~Primitive()
-    {
-
-    };
-
-    virtual bool line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const = 0;
+    virtual bool intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& q, glm::vec3& normal) const = 0;
     virtual void exportFile(std::string name, int frame) = 0;
 };
 
 class Plane : public Primitive
 {
 public:
-    Plane(glm::vec3 normal, float value) : m_normal(normal), m_value(value)
-    {
-
-    }
-
-    virtual ~Plane()
-    {
-
-    }
-
-    virtual bool line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const;
+    Plane(glm::vec3 normal, float distance);
+    virtual bool intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& q, glm::vec3& normal) const;
     virtual void exportFile(std::string name, int frame);
-    glm::vec3 m_normal;
-    float m_value;//distance between origin and the plane
+    glm::vec3 n;
+    float dis;//distance between origin and the plane
 };
 
 class Sphere : public Primitive
 {
 public:
-    Sphere(const glm::vec3 pos, float radius) : m_center(pos), m_radius(radius)
-    {
-        centerFake = glm::vec3(0.f);
-        radiusScale = 1.f;
-    }
-
-    virtual ~Sphere()
-    {
-
-    }
-
+    Sphere(const glm::vec3 _center, float _radius);
     std::vector<glm::vec3> vertices;
     glm::vec3 centerFake;
     float radiusScale;
-    virtual bool line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const;
+    virtual bool intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& q, glm::vec3& normal) const;
     int importFile(std::string name);
     virtual void exportFile(std::string name, int frame);
-    glm::vec3 m_center;
-    float m_radius;
+    glm::vec3 center;
+    float radius;
 };
 
 class Scene
@@ -74,10 +45,8 @@ class Scene
 public:
     Scene();
     virtual ~Scene();
-    void insert_primitive(Primitive* const new_primitive);
-    bool line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const;
-
-    std::vector<Primitive*> m_primitives;
+    bool intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& q, glm::vec3& normal) const;
+    std::vector<Primitive*> primitives;
 };
 
 

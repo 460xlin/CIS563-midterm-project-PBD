@@ -5,7 +5,7 @@
 #ifndef MYPBD_PBD_H
 #define MYPBD_PBD_H
 
-#include "PointList.h"
+#include "Points.h"
 #include "Constraint.h"
 #include "Scene.h"
 #include <sstream>
@@ -20,17 +20,16 @@ public:
     int iteration;
     float thickness;
 
-    float stretch_stiff;
-    float bend_stiff;
+    float stretchStiffness;
+    float bendStiffness;
 
-    PointList pointList;
-    std::vector<Constraint*> constraint;
-    std::vector<CollisionConstraint> constraintCollision;
-    std::vector<SelfCollisionConstraint> constraintSelfCollision;
-    std::vector<int> triangleList;
-    std::vector<Edge> edgeList;
+    Points points;
+    std::vector<Constraint*> constraints;
+    std::vector<CollisionConstraint> constraintsCollision;
+    std::vector<int> triangles;
+    std::vector<Edge> edges;
 
-    PBD(int iteration, float thickness, float stretch_stiff = 0.5f, float bend_stiff = 0.1f);
+    PBD(int iteration, float thickness, float stretchStiffness = 0.5f, float bendStiffness = 0.1f);
     ~PBD();
     void initialize(int _dimX, int _dimZ, glm::vec3 clothMin, glm::vec3 clothMax);
     int initializeFromObj(std::string name, glm::vec3 T, glm::vec3 R, glm::vec3 S);
@@ -40,17 +39,16 @@ public:
     void printAllPredict();
     void printDebug();
 private:
-    void generateEdgeList();
-    void generateInternalConstraints();
-    void applyExternalForce(glm::vec3 force, float dt);
+    void initializeEdges();
+    void initializeConstraints();
+    void gravity(glm::vec3 force, float dt);
     void dampVelocity(float kDamp);
     void computePredictedPostion(float dt);
     void collisionDetection(Scene* s);
-    void selfCollisionDetection();
     void resolveConstraints(int frame);//frame for debug
-    void integration(float dt);
+    void integrate(float dt);
     void updateVelocity(float friction, float restitution);
-    void cleanCollisionConstraints();
+    void clearCollisionConstraints();
     int loadObj(std::string name, glm::vec3 T, glm::vec3 R, glm::vec3 S);
     void parseObjFace(std::stringstream& ss, std::vector<int>& index);
 };

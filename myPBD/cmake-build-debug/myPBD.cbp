@@ -98,10 +98,10 @@
 		<Unit filename="/home/sean/File/Project/clion_projects/myPBD/PBD.h">
 			<Option target="myPBD"/>
 		</Unit>
-		<Unit filename="/home/sean/File/Project/clion_projects/myPBD/PointList.cpp">
+		<Unit filename="/home/sean/File/Project/clion_projects/myPBD/Points.cpp">
 			<Option target="myPBD"/>
 		</Unit>
-		<Unit filename="/home/sean/File/Project/clion_projects/myPBD/PointList.h">
+		<Unit filename="/home/sean/File/Project/clion_projects/myPBD/Points.h">
 			<Option target="myPBD"/>
 		</Unit>
 		<Unit filename="/home/sean/File/Project/clion_projects/myPBD/Scene.cpp">

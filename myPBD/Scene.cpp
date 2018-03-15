@@ -16,44 +16,42 @@ Scene::Scene()
 
 Scene::~Scene()
 {
-    for(std::vector<Primitive*>::iterator iter = m_primitives.begin(); iter != m_primitives.end(); ++iter)
+    for(std::vector<Primitive*>::iterator iter = primitives.begin(); iter != primitives.end(); ++iter)
     {
         delete (*iter);
     }
-    m_primitives.clear();
+    primitives.clear();
 }
 
-void Scene::insert_primitive(Primitive* const new_primitive)
+bool Scene::intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& q, glm::vec3& normal) const
 {
-    m_primitives.push_back(new_primitive);
-}
-
-bool Scene::line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const
-{// assume no intersection between primitives. i.e. a line intersects at most one primitive.
-    for(std::vector<Primitive*>::const_iterator iter = m_primitives.begin(); iter != m_primitives.end(); ++iter)
+    for(std::vector<Primitive*>::const_iterator iter = primitives.begin(); iter != primitives.end(); ++iter)
     {
-        if((*iter)->line_intersection(p1, p2, threshold, intersect, normal))
+        if((*iter)->intersect(p1, p2, threshold, q, normal))
             return true;
     }
     return false;
 }
 
-//----------Plane Class----------//
-bool Plane::line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const
+Plane::Plane(glm::vec3 normal, float distance) : n(normal), dis(distance)
 {
-    //p1 is position, p2 is predicted position
+
+}
+
+bool Plane::intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const
+{
     float v1, v2;
-    v1 = glm::dot(p1, m_normal) - m_value;
-    v2 = glm::dot(p2, m_normal) - m_value;
+    v1 = glm::dot(p1, n) - dis;
+    v2 = glm::dot(p2, n) - dis;
     if(v2 < threshold)
     {
-        normal = m_normal;
+        normal = n;
         if(v1 >= threshold)
-        {// continuous collision handling.
+        {
             intersect = ((v1 - threshold) * p2 - (v2 - threshold) * p1) / (v1 - v2);
         }
         else
-        {// static collision handling.
+        {
             intersect = p2 - (v2 - threshold) * normal;
         }
         return true;
@@ -66,37 +64,40 @@ void Plane::exportFile(std::string name, int frame) {
     //TO DO
 }
 
-//----------Sphere Class----------//
-bool Sphere::line_intersection(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const
-{// TODO: implement line-sphere intersection. you can refer to line-plane intersection.
-    float v1, v2;// v1 v2 are distance to sphere for p1 and p2.
-    v1 = glm::length(p1 - m_center) - m_radius;
-    v2 = glm::length(p2 - m_center) - m_radius;
+Sphere::Sphere(const glm::vec3 _center, float _radius) : center(_center), radius(_radius)
+{
+    centerFake = glm::vec3(0.f);
+    radiusScale = 1.f;
+}
+
+bool Sphere::intersect(const glm::vec3& p1, const glm::vec3& p2, float threshold, glm::vec3& intersect, glm::vec3& normal) const
+{
+    float v1 = glm::length(p1 - center) - radius;
+    float v2 = glm::length(p2 - center) - radius;
 
     if(v2 < threshold)
     {
         if(v1 >= threshold)
-        {// continuous collision handling.
+        {
             glm::vec3 newV0 = p2 - p1;
             glm::vec3 newP0 = glm::vec3(p1[0], p1[1], p1[2]);
 
             newV0 = glm::normalize(newV0);
 
-            float temp = glm::dot(newV0, m_center - newP0);
-            float t = temp - sqrt(temp * temp - glm::dot(m_center - newP0, m_center - newP0) + (m_radius + threshold) * (m_radius + threshold));
-            if(t < -0.001)
-                bool error = true;
+            float temp = glm::dot(newV0, center - newP0);
+            float t = temp - sqrt(temp * temp - glm::dot(center - newP0, center - newP0) + (radius + threshold) * (radius + threshold));
+
             intersect = newP0 + t * newV0;
-            normal = glm::normalize(intersect - m_center);
+            normal = glm::normalize(intersect - center);
         }
         else
-        {// static collision handling.
-            glm::vec3 newV0 = p2 - m_center;
+        {
+            glm::vec3 newV0 = p2 - center;
             float length = glm::length(newV0);
-            float t = (m_radius + threshold) / length;
+            float t = (radius + threshold) / length;
 
-            intersect = m_center + newV0 * t;
-            normal = glm::normalize(intersect - m_center);
+            intersect = center + newV0 * t;
+            normal = glm::normalize(intersect - center);
         }
         return true;
     }
@@ -170,7 +171,7 @@ int Sphere::importFile(std::string name) {
         return 1;
     }
 
-    radiusScale = m_radius / (diameter / 2.f);
+    radiusScale = radius / (diameter / 2.f);
     centerFake = (firstV + secondV)/2.f;
 
     file.close();
@@ -195,9 +196,9 @@ void Sphere::exportFile(std::string name, int frame) {
         float *v = parts->dataWrite<float>(vH, idx);
 
         m[0] = 1.0;
-        p[0] = (vertices[i].x + centerOffset.x) * radiusScale + m_center.x;
-        p[1] = (vertices[i].y + centerOffset.y) * radiusScale + m_center.y;
-        p[2] = (vertices[i].z + centerOffset.z) * radiusScale + m_center.z;
+        p[0] = (vertices[i].x + centerOffset.x) * radiusScale + center.x;
+        p[1] = (vertices[i].y + centerOffset.y) * radiusScale + center.y;
+        p[2] = (vertices[i].z + centerOffset.z) * radiusScale + center.z;
         v[0] = 0;
         v[1] = 0;
         v[2] = 0;

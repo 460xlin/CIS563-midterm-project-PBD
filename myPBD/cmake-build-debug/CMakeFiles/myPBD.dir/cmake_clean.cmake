@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/myPBD.dir/main.cpp.o"
   "CMakeFiles/myPBD.dir/PBD.cpp.o"
-  "CMakeFiles/myPBD.dir/PointList.cpp.o"
+  "CMakeFiles/myPBD.dir/Points.cpp.o"
   "CMakeFiles/myPBD.dir/Constraint.cpp.o"
   "CMakeFiles/myPBD.dir/Scene.cpp.o"
   "myPBD.pdb"

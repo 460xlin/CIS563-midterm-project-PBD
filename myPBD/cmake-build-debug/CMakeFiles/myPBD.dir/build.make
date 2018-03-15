@@ -105,28 +105,28 @@ CMakeFiles/myPBD.dir/PBD.cpp.o.provides: CMakeFiles/myPBD.dir/PBD.cpp.o.requires
 CMakeFiles/myPBD.dir/PBD.cpp.o.provides.build: CMakeFiles/myPBD.dir/PBD.cpp.o
 
 
-CMakeFiles/myPBD.dir/PointList.cpp.o: CMakeFiles/myPBD.dir/flags.make
-CMakeFiles/myPBD.dir/PointList.cpp.o: ../PointList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myPBD.dir/PointList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myPBD.dir/PointList.cpp.o -c /home/sean/File/Project/clion_projects/myPBD/PointList.cpp
+CMakeFiles/myPBD.dir/Points.cpp.o: CMakeFiles/myPBD.dir/flags.make
+CMakeFiles/myPBD.dir/Points.cpp.o: ../Points.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myPBD.dir/Points.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myPBD.dir/Points.cpp.o -c /home/sean/File/Project/clion_projects/myPBD/Points.cpp
 
-CMakeFiles/myPBD.dir/PointList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myPBD.dir/PointList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sean/File/Project/clion_projects/myPBD/PointList.cpp > CMakeFiles/myPBD.dir/PointList.cpp.i
+CMakeFiles/myPBD.dir/Points.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myPBD.dir/Points.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sean/File/Project/clion_projects/myPBD/Points.cpp > CMakeFiles/myPBD.dir/Points.cpp.i
 
-CMakeFiles/myPBD.dir/PointList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myPBD.dir/PointList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sean/File/Project/clion_projects/myPBD/PointList.cpp -o CMakeFiles/myPBD.dir/PointList.cpp.s
+CMakeFiles/myPBD.dir/Points.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myPBD.dir/Points.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sean/File/Project/clion_projects/myPBD/Points.cpp -o CMakeFiles/myPBD.dir/Points.cpp.s
 
-CMakeFiles/myPBD.dir/PointList.cpp.o.requires:
+CMakeFiles/myPBD.dir/Points.cpp.o.requires:
 
-.PHONY : CMakeFiles/myPBD.dir/PointList.cpp.o.requires
+.PHONY : CMakeFiles/myPBD.dir/Points.cpp.o.requires
 
-CMakeFiles/myPBD.dir/PointList.cpp.o.provides: CMakeFiles/myPBD.dir/PointList.cpp.o.requires
-	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/PointList.cpp.o.provides.build
-.PHONY : CMakeFiles/myPBD.dir/PointList.cpp.o.provides
+CMakeFiles/myPBD.dir/Points.cpp.o.provides: CMakeFiles/myPBD.dir/Points.cpp.o.requires
+	$(MAKE) -f CMakeFiles/myPBD.dir/build.make CMakeFiles/myPBD.dir/Points.cpp.o.provides.build
+.PHONY : CMakeFiles/myPBD.dir/Points.cpp.o.provides
 
-CMakeFiles/myPBD.dir/PointList.cpp.o.provides.build: CMakeFiles/myPBD.dir/PointList.cpp.o
+CMakeFiles/myPBD.dir/Points.cpp.o.provides.build: CMakeFiles/myPBD.dir/Points.cpp.o
 
 
 CMakeFiles/myPBD.dir/Constraint.cpp.o: CMakeFiles/myPBD.dir/flags.make
@@ -181,7 +181,7 @@ CMakeFiles/myPBD.dir/Scene.cpp.o.provides.build: CMakeFiles/myPBD.dir/Scene.cpp.
 myPBD_OBJECTS = \
 "CMakeFiles/myPBD.dir/main.cpp.o" \
 "CMakeFiles/myPBD.dir/PBD.cpp.o" \
-"CMakeFiles/myPBD.dir/PointList.cpp.o" \
+"CMakeFiles/myPBD.dir/Points.cpp.o" \
 "CMakeFiles/myPBD.dir/Constraint.cpp.o" \
 "CMakeFiles/myPBD.dir/Scene.cpp.o"
 
@@ -190,7 +190,7 @@ myPBD_EXTERNAL_OBJECTS =
 
 myPBD: CMakeFiles/myPBD.dir/main.cpp.o
 myPBD: CMakeFiles/myPBD.dir/PBD.cpp.o
-myPBD: CMakeFiles/myPBD.dir/PointList.cpp.o
+myPBD: CMakeFiles/myPBD.dir/Points.cpp.o
 myPBD: CMakeFiles/myPBD.dir/Constraint.cpp.o
 myPBD: CMakeFiles/myPBD.dir/Scene.cpp.o
 myPBD: CMakeFiles/myPBD.dir/build.make
@@ -205,7 +205,7 @@ CMakeFiles/myPBD.dir/build: myPBD
 
 CMakeFiles/myPBD.dir/requires: CMakeFiles/myPBD.dir/main.cpp.o.requires
 CMakeFiles/myPBD.dir/requires: CMakeFiles/myPBD.dir/PBD.cpp.o.requires
-CMakeFiles/myPBD.dir/requires: CMakeFiles/myPBD.dir/PointList.cpp.o.requires
+CMakeFiles/myPBD.dir/requires: CMakeFiles/myPBD.dir/Points.cpp.o.requires
 CMakeFiles/myPBD.dir/requires: CMakeFiles/myPBD.dir/Constraint.cpp.o.requires
 CMakeFiles/myPBD.dir/requires: CMakeFiles/myPBD.dir/Scene.cpp.o.requires
 

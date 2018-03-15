@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sean/File/Project/clion_projects/myPBD/Constraint.cpp" "/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles/myPBD.dir/Constraint.cpp.o"
   "/home/sean/File/Project/clion_projects/myPBD/PBD.cpp" "/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles/myPBD.dir/PBD.cpp.o"
-  "/home/sean/File/Project/clion_projects/myPBD/PointList.cpp" "/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles/myPBD.dir/PointList.cpp.o"
+  "/home/sean/File/Project/clion_projects/myPBD/Points.cpp" "/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles/myPBD.dir/Points.cpp.o"
   "/home/sean/File/Project/clion_projects/myPBD/Scene.cpp" "/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles/myPBD.dir/Scene.cpp.o"
   "/home/sean/File/Project/clion_projects/myPBD/main.cpp" "/home/sean/File/Project/clion_projects/myPBD/cmake-build-debug/CMakeFiles/myPBD.dir/main.cpp.o"
   )

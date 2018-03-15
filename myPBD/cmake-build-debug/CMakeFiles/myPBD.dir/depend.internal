@@ -4,7 +4,7 @@
 CMakeFiles/myPBD.dir/Constraint.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/Constraint.cpp
  /home/sean/File/Project/clion_projects/myPBD/Constraint.h
- /home/sean/File/Project/clion_projects/myPBD/PointList.h
+ /home/sean/File/Project/clion_projects/myPBD/Points.h
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_detail.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_fixes.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_swizzle.hpp
@@ -74,7 +74,7 @@ CMakeFiles/myPBD.dir/PBD.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/Constraint.h
  /home/sean/File/Project/clion_projects/myPBD/PBD.cpp
  /home/sean/File/Project/clion_projects/myPBD/PBD.h
- /home/sean/File/Project/clion_projects/myPBD/PointList.h
+ /home/sean/File/Project/clion_projects/myPBD/Points.h
  /home/sean/File/Project/clion_projects/myPBD/Scene.h
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_detail.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_fixes.hpp
@@ -142,9 +142,9 @@ CMakeFiles/myPBD.dir/PBD.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/glm/gtc/matrix_transform.inl
  /home/sean/File/Project/clion_projects/myPBD/glm/gtx/transform.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/gtx/transform.inl
-CMakeFiles/myPBD.dir/PointList.cpp.o
- /home/sean/File/Project/clion_projects/myPBD/PointList.cpp
- /home/sean/File/Project/clion_projects/myPBD/PointList.h
+CMakeFiles/myPBD.dir/Points.cpp.o
+ /home/sean/File/Project/clion_projects/myPBD/Points.cpp
+ /home/sean/File/Project/clion_projects/myPBD/Points.h
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_detail.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_fixes.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_swizzle.hpp
@@ -278,7 +278,7 @@ CMakeFiles/myPBD.dir/Scene.cpp.o
 CMakeFiles/myPBD.dir/main.cpp.o
  /home/sean/File/Project/clion_projects/myPBD/Constraint.h
  /home/sean/File/Project/clion_projects/myPBD/PBD.h
- /home/sean/File/Project/clion_projects/myPBD/PointList.h
+ /home/sean/File/Project/clion_projects/myPBD/Points.h
  /home/sean/File/Project/clion_projects/myPBD/Scene.h
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_detail.hpp
  /home/sean/File/Project/clion_projects/myPBD/glm/./core/_fixes.hpp

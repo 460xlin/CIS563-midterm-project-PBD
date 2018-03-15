@@ -37,8 +37,8 @@ Constraint.h
 /home/sean/File/Project/clion_projects/myPBD/Constraint.h
 
 /home/sean/File/Project/clion_projects/myPBD/Constraint.h
-PointList.h
-/home/sean/File/Project/clion_projects/myPBD/PointList.h
+Points.h
+/home/sean/File/Project/clion_projects/myPBD/Points.h
 
 /home/sean/File/Project/clion_projects/myPBD/PBD.cpp
 PBD.h
@@ -51,8 +51,8 @@ fstream
 -
 
 /home/sean/File/Project/clion_projects/myPBD/PBD.h
-PointList.h
-/home/sean/File/Project/clion_projects/myPBD/PointList.h
+Points.h
+/home/sean/File/Project/clion_projects/myPBD/Points.h
 Constraint.h
 /home/sean/File/Project/clion_projects/myPBD/Constraint.h
 Scene.h
@@ -60,11 +60,11 @@ Scene.h
 sstream
 -
 
-/home/sean/File/Project/clion_projects/myPBD/PointList.cpp
-PointList.h
-/home/sean/File/Project/clion_projects/myPBD/PointList.h
+/home/sean/File/Project/clion_projects/myPBD/Points.cpp
+Points.h
+/home/sean/File/Project/clion_projects/myPBD/Points.h
 
-/home/sean/File/Project/clion_projects/myPBD/PointList.h
+/home/sean/File/Project/clion_projects/myPBD/Points.h
 vector
 -
 glm/glm.hpp
